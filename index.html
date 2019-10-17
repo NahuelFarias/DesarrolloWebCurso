@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Leonidas Estaban</title>
+    <link rel="icon" type="image/png" href="Imagenes Curso/fabicon.png"/>
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Css/estilos.css">     <!--Estilo Externo: Archivo separado de HTML, es uno CSS-->
+    <!--<style>
+    header{
+        background: green;  Estilo Interno
+    }
+    </style>-->
+</head>
+<body>
+    <header>                         <!-- (style="color: red; background: blue;") Asi se pone como atributo "Estilo en Linea"-->
+        <div>
+            <figure>
+                <img src="Imagenes Curso/logo.png" alt="Logo de http:leonidasesteban.com"/>
+            </figure>
+            <nav>
+                <ol>
+                    <li>
+                        <a href="#portafolio">Portafolio</a>  <!--EL # IDENTIFICA QUE ES UN ENLACE INTERNO DENTRO DE LA MISMA PAGINA-->
+                    </li>                                     <!--Con / se hacen enlaces a paginas fuera de la actual-->
+                    <li>
+                        <a href="#eventos">Experiencia</a>
+                    </li>
+                    <li>
+                        <a href="#contacto">Trabajemos Juntos</a>
+                    </li>
+                </ol>
+            </nav>
+        </div>
+    </header>
+    <section>
+        <h1>
+            Hola! Soy <strong>Leonidas Estaban</strong> <br/> Desarrollador  <strong>Javascript</strong> con <br/> pasión por la <strong>enseñanza</strong>
+        </h1>
+        <img src="Imagenes Curso/hero.jpg" width="500" height="300" alt="Imagen principal del sitio">
+    </section>
+    <section id="portafolio">
+        <h2>Portafolio</h2>
+        <article>
+            <h3>Platzi Video</h3>
+            <h6>React Native / React</h6>
+            <p><small><strong>Fecha:</strong> 19/02/2019</small></p>
+            <p><small><strong>Puedes verlo en:</strong> www.platzi.com/native</small></p>
+            <p>
+            Platzi Video fue el resultado de 3 meses de trabajo para crear la mejor app para enseñar el funcionamiento de React y
+            React Native. Desde crear un vista-detalle, hasta patrones avanzados de navegación, este proyecto ha sido el ejemplo de
+            futuros creadores de aplicaciones multiplataforma
+            </p>
+            <img width="500" src="Imagenes Curso/platzi-video-react-native.png" alt="Proyecto del Curso de React Native">
+        </article>
+    </section>
+    <section id="eventos">
+        <h2>Más sobre mi experiencia</h2>
+        <article>
+            <figure>
+                <img src="Imagenes Curso/platzi-conf.jpg" width="500"/>
+            </figure>
+            <h3>PlatziConf México 2018</h3>
+            <p>
+            El evento más grande sobre gente que quiere aprender más de internet. En este evento te comparto cómo tener una vida de
+            constante aprendizaje.
+            </p>
+            <a href="https://www.youtube.com/watch?v=BIS7cWGgJg0" target="_blank">Ver Plática</a>  <!--Asi agrego enlaces externos asociados a texto-->
+        </article>                                                                                 <!--El _blanck me abre en una nueva pestaña-->
+    </section>
+    <section id="contacto">
+        <form action="/suscricion/">
+            <h3>¿Creamos algo juntos?</h3>
+            <input type="text" placeholder="Déjame tu email" id="email">
+            <button>Enviar</button>
+        </form>
+    </section>
+    <footer>Seccion Footer</footer>    
+</body>
+</html>

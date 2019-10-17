@@ -1,0 +1,41 @@
+/* reglas
+selectores
+declaraciones
+propiedades
+valores*/
+
+/*header{
+    background:pink; >>El "!important" se salta la jerarquia y le da prioridad ante todo
+}*/
+
+/*TIPOS DE SELECTORES:
+>Selector de etiqueta: Ej: header - section - article - nav - etc
+>Selector descendente:
+    Ej: body header div nav ol li a 
+>Selector de clase 
+    Nota: Las class se pueden replicar, en cambio los id son únicos
+*/
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+} /* El boy engloba a todo, por eso le HEREDA el cambio de tipografia a todos los hijos del mismo */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: normal; /*Define el ““peso”” de la letra, negrita, normal, light y 
+    normalmente se indica en múltiplos de 100 o usando keywords. */
+    /* font-style: italic; */
+}
+
+h1 {
+    font-size: 40px; /*Modifica el tamaño de la fuente*/
+    line-height: 1.5em; /*Modifica el espaciado entre las letras del texto.*/
+    letter-spacing: -.2px; /*Modifica el espacio entre lineas*/
+    /*text-transform: uppercase; Permite transformar el estado de mayúsculas / minúsculas en el texto, usando uppercase para mayúsculas sostenidas, etc
+    text-decoration: underline; Define el decorado del texto como subrayado, tachado, con subrayado superior, etc.*/
+}
