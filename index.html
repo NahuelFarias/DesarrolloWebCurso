@@ -2,8 +2,8 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8"/>
-    <title>Leonidas Estaban</title>
-    <link rel="icon" type="image/png" href="Imagenes/fabicon.png"/>
+    <title>Nahuel Farias</title>
+    <link rel="icon" type="image/png" href="Imagenes/pngocean.com-id-argno.png"/>
     <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="Css/estilos.css">     <!--Estilo Externo: Archivo separado de HTML, es uno CSS-->
     <!--<style>
@@ -13,10 +13,18 @@
     </style>-->
 </head>
 <body>
+    <!-- <div class="flexbox">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div> -->
     <header class="header">                         <!-- (style="color: red; background: blue;") Asi se pone como atributo "Estilo en Linea"-->
-        <div>
+        <!-- <a href="">uno</a>
+        <a href="">dos</a> -->
+        <div class="container">
             <figure class="logo">
-                <img src="Imagenes/logo.png" alt="Logo de http:leonidasesteban.com"/>
+                <img src="Imagenes/pngocean.com-id-argno.png" height="90" alt="Logo de http:leonidasesteban.com"/>
             </figure>
             <nav class="menu">
                 <ol>
@@ -34,51 +42,192 @@
         </div>
     </header>
     <section class="hero">
-        <h1>
-            Hola! Soy <strong>Leonidas Estaban</strong> <br/> Desarrollador  <strong>Javascript</strong> con <br/> pasión por la <strong>enseñanza</strong>
-        </h1>
-        <!-- <img src="Imagenes/hero.jpg" width="500" height="300" alt="Imagen principal del sitio"> -->
+        <div class="container">
+            <h1>
+                Hola! Soy <strong>Nahuel Farias</strong> <br/> Estudiante de<strong> Ingenieria</strong> con <br/> pasión por <strong>aprender</strong>
+            </h1>
+            <img class="hero-image" src="Imagenes/kisspng-astronaut.png" width="500" height="300" alt="Imagen principal del sitio">
+        </div>
     </section>
     <section id="portafolio" class="portfolio">
-        <h2>Portafolio</h2>
-        <article class="project">
-        <div class="project-details">
-            <h3 class="project-title">Platzi Video</h3>
-            <h6 class="project-course">React Native / React</h6>
-            <p class="project-date"><small><strong>Fecha:</strong> 19/02/2019</small></p>
-            <p class="project-url"><small><strong>Puedes verlo en:</strong> www.platzi.com/native</small></p>
-            <p class="project-descripcion">
-            Platzi Video fue el resultado de 3 meses de trabajo para crear la mejor app para enseñar el funcionamiento de React y
-            React Native. Desde crear un vista-detalle, hasta patrones avanzados de navegación, este proyecto ha sido el ejemplo de
-            futuros creadores de aplicaciones multiplataforma
-            </p>
+        <div class="container">
+            <h2>Portafolio (Proyectors Destacados)</h2>
+            <article class="project">
+            <div class="project-details">
+                <h3 class="project-title">Platzi Video</h3>
+                <h6 class="project-course">React Native / React</h6>
+                <p class="project-date"><small><strong>Fecha:</strong> 19/02/2019</small></p>
+                <p class="project-url"><small><strong>Puedes verlo en:</strong> www.platzi.com/native </small></p>
+                <p class="project-descripcion">
+                Platzi Video fue el resultado de 3 meses de trabajo para crear la mejor app para enseñar el funcionamiento de React y
+                React Native. Desde crear un vista-detalle, hasta patrones avanzados de navegación, este proyecto ha sido el ejemplo de
+                futuros creadores de aplicaciones multiplataforma
+                </p>
+            </div>
+                <figure class="project-imageContainer">
+                    <img class="project-image" width="500" src="Imagenes/platzi-video-react-native.png" alt="Proyecto del Curso de React Native">
+                </figure>
+            </article>
+            <article class="project">
+                <div class="project-details">
+                    <h3 class="project-title">Platzi Video</h3>
+                    <h6 class="project-course">React Native / React</h6>
+                    <p class="project-date"><small><strong>Fecha:</strong> 19/02/2019</small></p>
+                    <p class="project-url"><small><strong>Puedes verlo en:</strong> www.platzi.com/native</small></p>
+                    <p class="project-descripcion">
+                        Platzi Video fue el resultado de 3 meses de trabajo para crear la mejor app para enseñar el funcionamiento
+                        de React y
+                        React Native. Desde crear un vista-detalle, hasta patrones avanzados de navegación, este proyecto ha sido el
+                        ejemplo de
+                        futuros creadores de aplicaciones multiplataforma
+                    </p>
+                </div>
+                <figure class="project-imageContainer">
+                    <img class="project-image" width="500" src="Imagenes/platzi-video-react-native.png"
+                        alt="Proyecto del Curso de React Native">
+                </figure>
+            </article>
         </div>
-            <figure class="project-imageContainer">
-                <img class="project-image" width="500" src="Imagenes/platzi-video-react-native.png" alt="Proyecto del Curso de React Native">
-            </figure>
-        </article>
     </section>
-    <section id="eventos">
-        <h2>Más sobre mi experiencia</h2>
-        <article class="event">
-            <figure class="event-imageContainer">
-                <img class="event-image" src="Imagenes/platzi-conf.jpg" width="500"/>
-            </figure>
-            <h3 class="event-title">PlatziConf México 2018</h3>
-            <p class="event-descripcion">
-            El evento más grande sobre gente que quiere aprender más de internet. En este evento te comparto cómo tener una vida de
-            constante aprendizaje.
-            </p>
-            <a class="event-url" href="https://www.youtube.com/watch?v=BIS7cWGgJg0" target="_blank">Ver Plática</a>  <!--Asi agrego enlaces externos asociados a texto-->
-        </article>                                                                                 <!--El _blanck me abre en una nueva pestaña-->
+    <div class="container">
+        <h2 class="event-list-title">Más sobre mi experiencia</h2>
+    </div>
+    <section id="eventos" class="event-list">
+        <div class="container">
+            <article class="event">
+                <figure class="event-imageContainer">
+                    <img class="event-image" src="Imagenes/platziconf-header.jpg" width="500"/>
+                </figure>
+                <div class="event-detail">
+                    <h3 class="event-title">PlatziConf 2018</h3>
+                    <p class="event-descripcion">
+                    El evento más grande sobre gente que quiere aprender más de internet. En este evento te comparto cómo tener una vida de
+                    constante aprendizaje.
+                    </p>
+                    <a class="event-url" href="https://www.youtube.com/watch?v=BIS7cWGgJg0" target="_blank">Ver Plática</a>  <!--Asi agrego enlaces externos asociados a texto-->
+                </div>
+            </article>
+            <article class="event">
+                <figure class="event-imageContainer">
+                    <img class="event-image" src="Imagenes/platziconf-header.jpg" width="500" />
+                </figure>
+                <div class="event-detail">
+                    <h3 class="event-title">PlatziConf 2018</h3>
+                    <p class="event-descripcion">
+                        El evento más grande sobre gente que quiere aprender más de internet. En este evento te comparto cómo tener
+                        una vida de
+                        constante aprendizaje.
+                    </p>
+                    <a class="event-url" href="https://www.youtube.com/watch?v=BIS7cWGgJg0" target="_blank">Ver Plática</a>
+                    <!--Asi agrego enlaces externos asociados a texto-->
+                </div>
+            </article>
+            <article class="event">
+                <figure class="event-imageContainer">
+                    <img class="event-image" src="Imagenes/platziconf-header.jpg" width="500" />
+                </figure>
+                <div class="event-detail">
+                    <h3 class="event-title">PlatziConf 2018</h3>
+                    <p class="event-descripcion">
+                        El evento más grande sobre gente que quiere aprender más de internet. En este evento te comparto cómo tener
+                        una vida de
+                        constante aprendizaje.
+                    </p>
+                    <a class="event-url" href="https://www.youtube.com/watch?v=BIS7cWGgJg0" target="_blank">Ver Plática</a>
+                    <!--Asi agrego enlaces externos asociados a texto-->
+                </div>
+            </article>
+            <article class="event">
+                <figure class="event-imageContainer">
+                    <img class="event-image" src="Imagenes/platziconf-header.jpg" width="500" />
+                </figure>
+                <div class="event-detail">
+                    <h3 class="event-title">PlatziConf 2018</h3>
+                    <p class="event-descripcion">
+                        El evento más grande sobre gente que quiere aprender más de internet. En este evento te comparto cómo tener
+                        una vida de
+                        constante aprendizaje.
+                    </p>
+                    <a class="event-url" href="https://www.youtube.com/watch?v=BIS7cWGgJg0" target="_blank">Ver Plática</a>
+                    <!--Asi agrego enlaces externos asociados a texto-->
+                </div>
+            </article>                                                                                <!--El _blanck me abre en una nueva pestaña-->
+        </div>
     </section>
     <section id="contacto" class="contact">
-        <form action="/suscricion/" class="form-email">
-            <h3>¿Creamos algo juntos?</h3>
-            <input type="text" placeholder="Déjame tu email" id="email">
-            <button>Enviar</button>
-        </form>
+        <div class="container">
+            <form action="/suscricion/" class="form-email">
+                <h3>¿Creamos algo juntos?</h3>
+                <input type="text" placeholder="Déjame tu email" id="email">
+                <button>Enviar</button>
+            </form>
+            <div class="social">
+                <a href="https://twitter.com/leonidasesteban" class="social-link twitter"></a>
+                <a href="https://facebook.com/leonidas.esteban" class="social-link facebook"></a>
+                <a href="https://github.com/leonidasesteban" class="social-link github"></a>
+                <a href="https://instagram.com/leonidasesteban" class="social-link instagram"></a>
+            </div>
+        </div>
     </section>
-    <footer class="footer">Seccion Footer</footer>    
+    <footer class="footer">
+        <div class="container">
+            <div>
+                <p>
+                    Curso de Desarrollo Web Online 2018 <img src="Imagenes/minimalism.png" width="120" alt="platzi"> 
+                </p>
+            </div>
+            <div>
+                <p class="disegned">
+                    Designed with by <a href="https://twitter.com/nahuelfarias12"> @nahuelfarias12
+                </p>
+            </div>
+        </div>
+    </footer>    
 </body>
 </html>
+
+<!-- Display es la propiedad de css que indica cómo debe ser mostrado un elemento html. Todos los elementos tienen algún tipo
+de display. Si un elemento no se ve en pantalla es porque segurmanete su display es none.
+
+Los valores más comunes que puede recibir la propiedad display son:
+
+> block: el elemento intenta abarcar todo el ancho posible.
+> inline: reduce su tamaño exclusivamente hasta lo que abarca su contenido, descartando las propiedades width y height.
+> inline-block: combina lo mejor de block e inline, ya que respeta las dimensiones indicadas en las propiedades width y
+> height, pero coloca el elemento en línea (al costado) de elementos hermanos que también tengan display: inline o
+inline-block.
+> flex: asume algunas propiedades por defecto que favorecen la alineación de los elementos internos.
+> grid: similar a flex, asume algunas propiedades por defecto organizando los contenidos en filas y columnas.
+> none: oculta el elemento. -->
+
+<!-- FlexBox: permite un manejo flexible de la alineación, dimensionamiento y distribución de elementos html.
+
+Esta propiedad se aplica a un elemento padre, pero va a afectar principalmente a sus elementos hijos directos.
+Los elementos hijos de un padre con propiedad display: flex tienen a su disposición algunas nuevas propiedades que
+aportan mayor flexibilidad a su comportamiento. Una de estas propiedades es flex-shrink que, junto a la propiedad
+flex-wrap del padre, permite adaptar y distribuir los elementos de manera dinámica en el espacio horizontal disponible
+hasta ocupar todo el espacio, y luego pasar a ocupar dinamicamente las siguiente filas hacia abajo. -->
+
+<!-- Justifi-content: nos permite definir la forma en que se alinearán o distribuirán los hijos de un elemento al que se le ha asignado un
+display flex. (DE MANERA HORIZONTAL)
+> flex-start: para alinear todos los elementos hacia el inicio del espacio disponible.
+> flex-end: para alinear todos los elementos hacia el final, a la derecha.
+> center: para alinear todos los elementos al centro del espacio disponible.
+> space-between: para distribuir los elementos con un espacio proporcional e igual entre ellos.
+> space-evenly: para distribuir los elementos con un espacio proporcional e igual entre ellos (incluyendo el primer y
+último elementos con respecto a los extremos del espacio disponible).
+> space-around: similar a space-evenly pero tanto en el primero como en el último elemento, el espacio hacia los extremos
+es la mitad del espacio usado entre los elementos. -->
+
+<!-- (DE MANERA VERTICAL)
+    Align-items: Puede tomar también los valores de: flex-start, flex-end y center.
+Algo que es muy importante y se debe tener en cuenta a la hora de usar align-items y justify-content es que dependiendo
+de la propiedad flex-direction que se haya definido, el efecto de ambos se invierte, no en cuanto a sus elementos
+internos, sino en cuanto a si se debe usar uno u otro de manera vertical u horizontal.
+
+IMPORTANTE: Cuando la propiedad flex-direction se ha definido como column, la propiedad justify-content ya no va a
+aplicar sobre la alineación horizontal, sino sobre la vertical. Y align-items ya no aplicaría sobre la alineación
+vertical sino la horizontal. Se intercambian sus efectos.
+
+Para centrar completamente los elementos internos de manera vertical y horizontal en su elemento padre, debemos usar el
+valor center en ambas propiedades. -->
