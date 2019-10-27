@@ -16,16 +16,6 @@ valores*/
     Nota: Las class se pueden replicar, en cambio los id son únicos
 */
 
-/* MODELO DE CAJA: 
-Es un concepto teórico de css que representa a cada elemento html en base sus 
-propiedades de: margin, border, padding y dimensiones (alto y ancho).
-El ancho total de un elemento html equivale a la sumatoria de los valores de: width, padding-left,
-padding-right, border-left-width, border-right-width.
-De manera similar aplica para el alto total de cada elemento. Aunque margin-left y margin-right,
-forman parte del modelo de caja, no se incluyen para el calculo del ancho total.
-Con la propiedad box-sizing, y en particular con el valor border-box de esta propiedad, podemos modificar
-el comportamiento del modelo de caja para que nuestro elemento nunca supere el tamaño máximo que le hayamos
-definido en width y height. Esta es la opción recomendad para trabajar. */
 
 body {
   font-family: 'Source Sans Pro', sans-serif;
@@ -286,9 +276,9 @@ figure {
   justify-content: space-between;
 }
 
-.social {
-  /* border: 1px solid red; */
-}
+/* .social {
+  border: 1px solid red; 
+} */
 
 .social-link {
   display: inline-block;
