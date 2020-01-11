@@ -1,0 +1,236 @@
+2. HTML
+
+--> DOM
+
+DOM es el acrónimo de Document Object Model o Modelo de documento, y es la manera en que se representa el 
+contenido del documento, de manera similar a un árbol de nodos.
+
+A continuación, un ejemplo sencillo de la estructura del DOM:
+
+html
+    head
+        title
+        meta
+    body
+        header
+            nav
+        section
+            article
+        footer
+
+
+--> Etiquetas
+
+Las etiquetas son la representación básica de la información en un documento html. Sirven para crear y organizar el contenido.
+La sintaxis general de una etiqueta es:
+
+<nombre>contenido</nombre>
+
+Hay ciertas etiquetas que tienen una sintaxis diferente, ya que se cierran en sí mismas; es decir, no tienen etiqueta de cierre:
+
+<nombre />
+
+Algunas de las etiquetas más conocidas y usadas son:
+
+Etiquetas de cabecera (head):
+
+   - doctype: indica al navegador el tipo de documento que se está mostrando.
+   - html: es la etiqueta que envuelve todo el documento
+   - head: es la cabecera del documento y contiene sub etiquetas que describen al documento o incluyen recursos adicionales.
+
+Etiquetas del cuerpo del documento (body):
+
+   - article: diferencia partes del contenido que pueden vivir por sí mismas.
+   - nav: para hacer menús de navegación.
+   - aside: contenido menos relevante, como publicidad, etc.
+   - section: sirve para diferenciar las secciones principales del contenido.
+   - header: cabecera del documento.
+   - footer: pie de página del documento.
+   - h1 - h6: títulos de nuestro sitio web.
+   - table: tablas de contenidos, similar a la estructura de las hojas de calculo.
+   - ul y ol: listas de items.
+   - div: cualquier división para organizar el contenido.
+
+
+--> Estructura de nuestro Sitio Web
+
+Incluirá una cabecera, navegación, un hero (área visual con información destacada), un área de proyectos 
+y otra para eventos, y finalmente un pié de página con un formulario de contacto y enlaces a redes sociales.
+
+El archivo index.html es el archivo que el navegador abre por defecto al acceder a un directorio en un servidor web.
+
+La estructura básica de un archivo html es la siguiente:
+
+<html>
+  <head>
+    <title> Título de la página </title>
+  </head>
+  <body>
+    <header> Cabecera del contenido </header>
+    <section> Sección principal </section>
+    <section> Otra sección </section>
+    <footer> Pié de página del documento </footer>
+  </body>
+</html>
+
+
+--> Continuando con la estructura de nuestro Sitio Web
+
+La estructura html de nuestro proyecto usa una o más de las siguientes etiquetas:
+
+   - h1 a h6: son etiquetas para indicar títulos con un estilo que destaca del resto.
+   - article: es la parte de nuestro contenido que puede vivir por sí mismo. Pueden haber tantos artícle como proyectos o eventos 
+     tenga nuestro portafolio.
+   - p: define el texto de un párrafo.
+   - small: aplica una apariencia de texto reducido en tamaño. La etiqueta small nos indica un apéndice o una nota al margen 
+     al texto principal, como por ejemplo la “letra pequeña” legal en la parte inferior del documento.
+   - strong: aplica al texto un formato de negritas.
+   - a: corresponde a un ancla o enlace a una url interna o externa del documento.
+   - img: con esta etiqueta podemos enlazar imágenes en el documento.
+   - figure: le da un contexto semántico a las imágenes.
+
+
+--> Atributos HTML
+
+Los atributos son valores agregados a las etiquetas (tags) html que extienden su habilidad o funcionalidad con información específica.
+
+A continuación, un ejemplo de los atributos más comunes y usados en algunas etiquetas:
+
+Para img:
+
+   - src: específica la ruta de la imagen que será mostrada a través de esta etiqueta. La ruta puede ser absoluta (cunado especifica una 
+     dirección exacta, incluyendo el prefijo http(s) ) o relativa (cuando la referencia a la ubicación de la imagen parte de la 
+     ubicación del archivo actual).
+   - alt: indica un texto alternativo que será mostrado en lugar de la imagen cuando ésta no pueda ser mostrada.
+   - width: ancho de la imagen en pixeles.
+   - height: alto de la imagen en pixeles.
+
+Para link, en la cabecera head del documento:
+
+   - rel: indica la relación del recurso con el contenido.
+   - type: indica el tipo de recurso / formato.
+   - href: indica la ubicación (url) del recurso enlazado.
+
+Para meta, también en la cabecera head del documento:
+
+   - charset: indica la tabla de caracteres (utf-8 para caracteres latinos) usada en el documento.
+
+Para a:
+
+   - href: la ubicación o ruta a la que enlaza esta etiqueta de ancla. En el caso de querer enlazar a elementos que se encuentran 
+     dentro del mismo documento, este atributo debe indicar el valor del atributo ““id”” de ese elemento destino del enlace.
+
+Rutas relativas y absolutas:
+
+Absolutas/completas: son las que describen la ubicación completa del directorio en donde se encuentra, comienzan con la 
+letra de la unidad y dos puntos, ejemplo:
+C:/Users/“nombredeusuario”/Desktop/dibujo.png
+
+Relativas: describen la ubicación de un directorio acorde al contexto en la que se encuentra, es decir, hacen referencia a un
+ directorio a partir de una ubicación actual.
+Utilizan dos simbolos: (un punto) ./ y (dos puntos seguidos) …/ uno hace referencia al directorio actual y el otro al directorio padre,
+ se utilizan para subir de jerarquia, ejemplo: Ubicacion actual: C:/Users/Fulano/Desktop/Frontend/Pagina Web
+Si se quiere mover a otro directorio/carpeta que se encuentra en “Frontend” entonces: …/Frontend/“Carpeta”
+
+Nota*
+Las rutas relativas no sirven para cambiar de unidad, es decir, si se encuentra en la unidad “C” no puede cambiarse a la unidad “D”
+
+La separación de barras en las rutas son diferentes dependiendo del sistema operativo: en windows se utiliza la barra invertida
+ \ aunque en los sistemas unix se utiliza la barra diagonal /
+
+
+--> Formularios HTML
+
+Los Formularios en html son unidades de información que nos permiten recolectar información para enviarlos al propietario del website 
+ o a un servicio externo. Esta formado por dos partes o contextos: una parte donde se hace el ingreso y modelación de esos datos 
+ (en el frontend), y otra parte que se encarga de enviar, procesar y almacenar esos datos (en el backend).
+
+Los formularios se crean con la etiqueta form. El atributo principal de un formulario es action, ya que contiene la ruta a la que serán 
+ enviados los datos recolectados.
+
+Hay diversos elementos html que permiten la captura o recolección de datos, aunque generalmente se usan los elementos creados con la 
+ etiqueta input. Los inputs también sirven para crear botones, aunque existe una etiqueta especial para ésto llamada button… El atributo
+ principal de los inputs es type, que indica el tipo de comportamiento o dato que se espera recibir.
+
+Los elementos creados con la etiqueta label muestran un texto que se puede asociar con un input para darle mayor significado al campo,
+ principalmente cuando no se usa el atributo placeholder.
+
+
+--> Navegación entre secciones
+
+En el curso se utiliza # seguido del id de la seccion a la que se quiere ir
+
+Cuando hacemos click a un enlace interno (#), más que un ‘scroll’ se teletransporta; para añadir un efecto scroll visualmente 
+superior y SIN USAR JS, podemos hacer uso de este pequeño trozo de código css:
+html { scroll-behavior: smooth; }
+Esas 3 líneas hacen una gran diferencia visual 😃
+
+Target:
+
+Especifica en donde desplegar la URL enlazada:
+
+_self: Carga la URL en el mismo contexto de navegación que el actual. Este es el comportamiento por defecto.
+_blank: Carga la URL en un nuevo contexto de navegación. Usualmente es una pestaña, sin embargo, los usuarios pueden 
+configurar los navegadores para utilizar una ventana nueva en lugar de la pestaña.
+_parent: Carga la URL en el contexto de navegación padre (parent) del actual. Si no existe el padre, este se comporta del 
+ mismo modo que _self.
+_top: Carga la URL en el contexto más alto de navegación (el cual es un ancestro del actual, y no tiene padre (parent)). 
+ Si no hay padre (parent), este se comporta del mismo modo que _self.
+
+
+--> Formas de agregar estilos a HTML
+
+Hay tres opciones para incluir estilos que definan la apariencia de tu html:
+
+   - Estilos en línea: se definen directamente en el elemento html que quieres estilizar, se agregan con el atributo style.
+   - Estilos con el tag Style: regularmente este tag se incluye dentro de la etiqueta head del html.
+   - Estilos enlazados desde un archivo css externo: utilizando la etiqueta link que nos permite enlazar recursos externos.
+
+A CSS, se le llama hojas de estilos en cascada porque los estilos que se definen para una página, se van aplicando de arriba 
+ hacia abajo, y de lo más general a lo más particular, teniendo prioridad lo más particular. Esto es, los estilos que prevalecen 
+ son los que han sido definidos en línea, luego los que fueron definidos mediante la etiqueta style en la cabeza o cuerpo del html,
+ y por último los estilos definidos en archivos externos enlazados con la etiqueta link. Esta prioridad se puede alterar al usar el 
+ modificador **!important"" en la definición de algún estilo en particular, aunque esto no es recomendado.
+
+
+--> Reglas, selectores, declaraciones, propiedades y valores de CSS
+
+Partes de una estructura CSS:
+
+Selector / Propiedad: Valor de Propiedad / Declaracion
+
+También recordar que existen varios tipos de selectores:
+    1. Selector de etiqueta: refiere a etiquetas HTML.
+    2. Selector descendiente: refiere a etiquetas HTML de forma hereditaria.
+    3. Selector de id: refiere a atributos id de etiquetas HTML.
+    4. Selector de class (clase): refiere a atributos class de etiquetas HTML.
+
+Recordar:
+
+   - Los id deben son únicos, es decir, no se pueden repetir.
+   - Las clases si se pueden repetir.
+
+--> Los estilos incluidos por el navegador
+
+Los navegadores incluyen estilos predeterminados para cada elemento html. Esto significa que aún cuando no hayas definido o asignado 
+ ningún estilo a tus etiquetas, éstas tendrán una apariencia particular que es muy similar en todos los navegadores, aunque no 
+ necesariamente idéntica.
+
+
+--> Agregando clases a los componentes escritos en HTML
+
+Para aplicar estilos a los componentes html, lo más común y recomendable es hacerlo a través de clases que se asignan al elemento
+ html mediante el atributo class.
+
+Un elemento html puede tener varias clases, se deben indicar en el mismo atributo class pero separadas por un espacio en blanco.
+
+Al escoger los nombres de clases, debemos tener en cuenta que se puedieran aplicar a muchos elementos, o a elementos particulares,
+ así que la claridad y precisión en su identificación facilitará la contextualización y mantenibilidad en el futuro.
+
+Algunos de los estándares más usados para la identificación de clases son:
+
+   - OOCSS
+   - BEM
+   - Component CSS
+
+
